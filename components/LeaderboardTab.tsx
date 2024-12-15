@@ -2,6 +2,7 @@
 
 import { trophy } from '@/images';
 import Image from 'next/image'
+import {EonixLogo} from '@/images'
 
 type LeaderboardItem = {
     wallet: string;
@@ -13,9 +14,9 @@ type LeaderboardItem = {
 const LeaderboardTab = () => {
     const leaderboardData: LeaderboardItem[] = [
         { wallet: "Diamondwhale", balance: "104224", place: "🥇" },
-        { wallet: "imGet", balance: "100000", place: "🥈" },
-        { wallet: "Esalat", balance: "98521", place: "🥉" },
-        { wallet: "mehranseydi", balance: "97512", place: "#4" },
+        { wallet: "weno", balance: "100000", place: "🥈" },
+        { wallet: "ken", balance: "98521", place: "🥉" },
+        { wallet: "tineteafake", balance: "97512", place: "#4" },
         { wallet: "abbas", balance: "83222", place: "#5" },
         { wallet: "CenterProd", balance: "82333", place: "#6" },
         { wallet: "tuxeoqt", balance: "77555", place: "#7" },
@@ -47,11 +48,12 @@ const LeaderboardTab = () => {
                         <div className="flex items-center gap-3">
                             <div className="w-10 h-10 p-1.5 bg-black rounded-lg">
                                 {/* Ganti logo PAWS dengan logo Eonix */}
-                                <img
-                                    src="/images/EonixLogo.svg" // Ganti path sesuai dengan logo Anda
-                                    alt="Eonix Logo"
-                                    className="w-full h-full"
-                                />
+                                <Image
+                  src={EonixLogo}
+                  alt="sparkles"
+                  width={25}
+                  height={25}
+                />
                             </div>
                             <div className="text-black font-medium">
                                 <div className="text-base">Your</div>
@@ -76,11 +78,12 @@ const LeaderboardTab = () => {
                             <div className="flex items-center gap-3">
                                 <div className="w-10 h-10 p-1.5 bg-black rounded-lg">
                                     {/* Ganti logo PAWS dengan logo Eonix */}
-                                    <img
-                                        src="/images/EonixLogo.svg" // Ganti path sesuai dengan logo Anda
-                                        alt="Eonix Logo"
-                                        className="w-full h-full text-black"
-                                    />
+                                    <Image
+                  src={EonixLogo}
+                  alt="sparkles"
+                  width={25}
+                  height={25}
+                />
                                 </div>
                                 <div>
                                     <div className="text-base font-medium">{item.wallet}</div>
