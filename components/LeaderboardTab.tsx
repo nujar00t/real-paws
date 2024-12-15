@@ -1,15 +1,5 @@
-// components/LeaderboardTab.tsx
-
-/**
- * This project was developed by Nikandr Surkov.
- * 
- * YouTube: https://www.youtube.com/@NikandrSurkov
- * GitHub: https://github.com/nikandr-surkov
- */
-
 'use client'
 
-import PawsLogo from '@/icons/PawsLogo'
 import { trophy } from '@/images';
 import Image from 'next/image'
 
@@ -22,14 +12,14 @@ type LeaderboardItem = {
 
 const LeaderboardTab = () => {
     const leaderboardData: LeaderboardItem[] = [
-        { wallet: "Pishnahad_Sup", balance: "53,137,490", place: "🥇" },
-        { wallet: "imGet", balance: "52,374,426", place: "🥈" },
-        { wallet: "Esalat", balance: "45,459,702", place: "🥉" },
-        { wallet: "mehranseydi", balance: "42,660,196", place: "#4" },
-        { wallet: "abbas", balance: "34,626,638", place: "#5" },
-        { wallet: "CenterProd", balance: "32,032,520", place: "#6" },
-        { wallet: "tuxeoqt", balance: "31,568,259", place: "#7" },
-        { wallet: "ladesov", balance: "28,707,823", place: "#8" },
+        { wallet: "Diamondwhale", balance: "104224", place: "🥇" },
+        { wallet: "imGet", balance: "100000", place: "🥈" },
+        { wallet: "Esalat", balance: "98521", place: "🥉" },
+        { wallet: "mehranseydi", balance: "97512", place: "#4" },
+        { wallet: "abbas", balance: "83222", place: "#5" },
+        { wallet: "CenterProd", balance: "82333", place: "#6" },
+        { wallet: "tuxeoqt", balance: "77555", place: "#7" },
+        { wallet: "ladesov", balance: "58999", place: "#8" },
     ]
 
     return (
@@ -47,7 +37,7 @@ const LeaderboardTab = () => {
                     <h1 className="text-2xl font-bold mb-2">Leaderboard</h1>
                     <div className="w-full mt-2 px-6 py-1 flex justify-between rounded-lg text-sm font-medium text-[#fefefe] bg-[#151516]">
                         <span>Total</span>
-                        <span>23,253,686 users</span>
+                        <span>1686 users</span>
                     </div>
                 </div>
 
@@ -56,14 +46,19 @@ const LeaderboardTab = () => {
                     <div className="flex items-center justify-between">
                         <div className="flex items-center gap-3">
                             <div className="w-10 h-10 p-1.5 bg-black rounded-lg">
-                                <PawsLogo className="w-full h-full" />
+                                {/* Ganti logo PAWS dengan logo Eonix */}
+                                <img
+                                    src="/images/EonixLogo.svg" // Ganti path sesuai dengan logo Anda
+                                    alt="Eonix Logo"
+                                    className="w-full h-full"
+                                />
                             </div>
                             <div className="text-black font-medium">
-                                <div className="text-base">nikandr_s</div>
-                                <div className="text-xs">4,646 PAWS</div>
+                                <div className="text-base">Your</div>
+                                <div className="text-xs">4,646 EONIX</div>
                             </div>
                         </div>
-                        <div className="text-black">#15,355,328</div>
+                        <div className="text-black">#959</div>
                     </div>
                 </div>
 
@@ -79,13 +74,18 @@ const LeaderboardTab = () => {
                                 }`}
                         >
                             <div className="flex items-center gap-3">
-                                <div className="w-10 h-10 p-1.5 bg-white rounded-lg">
-                                    <PawsLogo className="w-full h-full text-black" />
+                                <div className="w-10 h-10 p-1.5 bg-black rounded-lg">
+                                    {/* Ganti logo PAWS dengan logo Eonix */}
+                                    <img
+                                        src="/images/EonixLogo.svg" // Ganti path sesuai dengan logo Anda
+                                        alt="Eonix Logo"
+                                        className="w-full h-full text-black"
+                                    />
                                 </div>
                                 <div>
                                     <div className="text-base font-medium">{item.wallet}</div>
                                     <div className="text-sm font-medium text-[#7c7c7c]">
-                                        {item.balance} PAWS
+                                        {item.balance} EONIX
                                     </div>
                                 </div>
                             </div>
