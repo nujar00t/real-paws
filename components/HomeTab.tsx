@@ -33,12 +33,11 @@ const HomeTab = () => {
             {/* PAWS Balance */}
             <div className="flex flex-col items-center mt-8">
             <Image
-  src="/images/EonixLogo.svg"
-  alt="Eonix Logo"
-  width={112}  // Sesuaikan dengan ukuran yang diinginkan
-  height={112} // Sesuaikan dengan ukuran yang diinginkan
-  className="mb-4"
-/>
+                  src={EonixLogo}
+                  alt="sparkles"
+                  width={110}
+                  height={110}
+                />
 
                 <div className="flex items-center gap-1 text-center">
                     <div className="text-6xl font-bold mb-1">4,646</div>
