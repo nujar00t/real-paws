@@ -13,10 +13,10 @@ type LeaderboardItem = {
 
 const LeaderboardTab = () => {
     const leaderboardData: LeaderboardItem[] = [
-        { wallet: "Diamondwhale", balance: "104224", place: "🥇" },
-        { wallet: "weno", balance: "100000", place: "🥈" },
-        { wallet: "ken", balance: "98521", place: "🥉" },
-        { wallet: "tineteafake", balance: "97512", place: "#4" },
+        { wallet: "jck883", balance: "104224", place: "🥇" },
+        { wallet: "hiddgem_", balance: "100000", place: "🥈" },
+        { wallet: "kenrose", balance: "98521", place: "🥉" },
+        { wallet: "mathilfree", balance: "97512", place: "#4" },
         { wallet: "abbas", balance: "83222", place: "#5" },
         { wallet: "CenterProd", balance: "82333", place: "#6" },
         { wallet: "tuxeoqt", balance: "77555", place: "#7" },
