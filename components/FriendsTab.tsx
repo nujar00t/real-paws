@@ -1,6 +1,7 @@
 'use client'
 
 import Image from 'next/image'
+import {EonixLogo} from '@/images'
 
 const FriendsTab = () => {
     return (
@@ -27,12 +28,11 @@ const FriendsTab = () => {
                 <div className="bg-[#151516] w-full rounded-2xl p-8 flex flex-col items-center">
                     {/* Ganti gambar Paws dengan logo Eonix */}
                     <Image
-                        src="/images/EonixLogo.svg"  // Ganti path sesuai dengan logo Anda
-                        alt="Eonix Logo"
-                        width={171}
-                        height={132}
-                        className="mb-4"
-                    />
+                  src={EonixLogo}
+                  alt="sparkles"
+                  width={200}
+                  height={200}
+                />
                     <p className="text-xl text-[#8e8e93] text-center">
                         There is nothing else.<br />
                         Invite to get more rewards.
