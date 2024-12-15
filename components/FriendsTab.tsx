@@ -1,15 +1,5 @@
-// components/FriendsTab.tsx
-
-/**
- * This project was developed by Nikandr Surkov.
- * 
- * YouTube: https://www.youtube.com/@NikandrSurkov
- * GitHub: https://github.com/nikandr-surkov
- */
-
 'use client'
 
-import { paws } from '@/images'
 import Image from 'next/image'
 
 const FriendsTab = () => {
@@ -35,9 +25,10 @@ const FriendsTab = () => {
             {/* Empty State */}
             <div className="mt-8 mb-2">
                 <div className="bg-[#151516] w-full rounded-2xl p-8 flex flex-col items-center">
+                    {/* Ganti gambar Paws dengan logo Eonix */}
                     <Image
-                        src={paws}
-                        alt="Paws"
+                        src="/images/EonixLogo.svg"  // Ganti path sesuai dengan logo Anda
+                        alt="Eonix Logo"
                         width={171}
                         height={132}
                         className="mb-4"
