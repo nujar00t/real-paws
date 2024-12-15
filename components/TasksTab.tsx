@@ -32,50 +32,37 @@ const TasksTab = () => {
     const [activeTab, setActiveTab] = useState<'in-game' | 'partners'>('in-game')
 
     const tasks: Task[] = [
-        {
-            icon: taskWhitePaws.src,
-            title: 'Put 🐾 in your name',
-            reward: '+ 5,000 PAWS'
-        },
-        {
-            icon: TaskPaws,
-            title: 'Tweet about PAWS',
-            reward: '+ 2,000 PAWS'
-        },
+         
         {
             icon: taskBoost.src,
-            title: 'Boost PAWS channel',
-            reward: '+ 2,500 PAWS'
+            title: 'Boost EONIX channel',
+            reward: '+ 2,500 EONIX'
         },
         {
             icon: TaskTelegram,
             title: 'Follow channel',
-            reward: '+ 1,000 PAWS'
+            reward: '+ 1,000 EONIX'
         },
         {
             icon: TaskTwitter,
             title: 'Follow twitter',
-            reward: '+ 2,000 PAWS'
+            reward: '+ 2,000 EONIX'
         },
         {
             icon: TaskInvite,
             title: 'Invite 10 friends',
-            reward: '+ 5,000 PAWS'
+            reward: '+ 5,000 EONIX'
         },
         {
             icon: TaskWallet,
             title: 'Connect wallet',
-            reward: '+ 3,000 PAWS'
+            reward: '+ 3,000 EONIX'
         },
         // Add more tasks as needed
     ]
 
     const partnerTasks: Task[] = [
-        {
-            icon: taskBlum.src,
-            title: 'Join Blum Channel',
-            reward: '+ 1,000 PAWS'
-        }
+ 
     ]
 
     return (
@@ -112,7 +99,7 @@ const TasksTab = () => {
                 >
                     Partners
                     <div className="bg-[#5a5a5a] text-[#fefefe] size-4 rounded-full flex items-center justify-center text-[11px]">
-                        1
+                        0
                     </div>
                 </button>
             </div>
