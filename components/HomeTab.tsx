@@ -15,7 +15,9 @@ import Community from '@/icons/Community'
 import Star from '@/icons/Star'
 import Image from 'next/image'
 import ArrowRight from '@/icons/ArrowRight'
-import { sparkles } from '@/images'
+import {EonixLogo} from '@/images'
+import {sparkles} from '@/images'
+
 
 const HomeTab = () => {
     return (
@@ -30,10 +32,17 @@ const HomeTab = () => {
 
             {/* PAWS Balance */}
             <div className="flex flex-col items-center mt-8">
-                <PawsLogo className="w-28 h-28 mb-4" />
+            <Image
+  src="/images/EonixLogo.svg"
+  alt="Eonix Logo"
+  width={112}  // Sesuaikan dengan ukuran yang diinginkan
+  height={112} // Sesuaikan dengan ukuran yang diinginkan
+  className="mb-4"
+/>
+
                 <div className="flex items-center gap-1 text-center">
                     <div className="text-6xl font-bold mb-1">4,646</div>
-                    <div className="text-white text-2xl">PAWS</div>
+                    <div className="text-white text-2xl">EONIX</div>
                 </div>
                 <div className="flex items-center gap-1 text-[#868686] rounded-full px-4 py-1.5 mt-2 cursor-pointer">
                     <span>NEWCOMER</span>
@@ -50,21 +59,27 @@ const HomeTab = () => {
 
             {/* Action Buttons */}
             <div className="space-y-3 px-4 mt-8 mb-8">
-                <button className="shine-effect w-full bg-[#ffffff0d] border-[1px] border-[#2d2d2e] rounded-lg px-4 py-2 flex items-center justify-between">
-                    <div className="flex items-center gap-3 font-medium">
-                        <Community className="w-8 h-8" />
-                        <span>Join our community</span>
-                    </div>
-                    <ArrowRight className="w-6 h-6 text-gray-400" />
-                </button>
+            <button
+  onClick={() => window.open("https://t.me/yourtelegramlink", "_blank", "noopener,noreferrer")}
+  className="shine-effect w-full bg-[#ffffff0d] border-[1px] border-[#2d2d2e] rounded-lg px-4 py-2 flex items-center justify-between"
+>
+  <div className="flex items-center gap-3 font-medium">
+    <Community className="w-8 h-8" />
+    <span>Join our community</span>
+  </div>
+  <ArrowRight className="w-6 h-6 text-gray-400" />
+</button>
 
-                <button className="w-full bg-[#ffffff0d] border-[1px] border-[#2d2d2e] rounded-lg px-4 py-2 flex items-center justify-between">
-                    <div className="flex items-center gap-3 font-medium">
-                        <Star className="w-8 h-8" />
-                        <span>Check your rewards</span>
-                    </div>
-                    <ArrowRight className="w-6 h-6 text-gray-400" />
-                </button>
+<button
+  onClick={() => window.open("https://x.com/EonixAiComplex", "_blank", "noopener,noreferrer")}
+  className="w-full bg-[#ffffff0d] border-[1px] border-[#2d2d2e] rounded-lg px-4 py-2 flex items-center justify-between"
+>
+  <div className="flex items-center gap-3 font-medium">
+    <Star className="w-8 h-8" />
+    <span>X Community</span>
+  </div>
+  <ArrowRight className="w-6 h-6 text-gray-400" />
+</button>
             </div>
         </div>
     )
