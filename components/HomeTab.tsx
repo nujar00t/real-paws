@@ -41,7 +41,7 @@ const HomeTab = () => {
 
                 <div className="flex items-center gap-1 text-center">
                     <div className="text-6xl font-bold mb-1">4,646</div>
-                    <div className="text-white text-2xl">EONIX</div>
+                    <div className="text-white text-2xl">ZEPHYR</div>
                 </div>
                 <div className="flex items-center gap-1 text-[#868686] rounded-full px-4 py-1.5 mt-2 cursor-pointer">
                     <span>NEWCOMER</span>
@@ -59,7 +59,7 @@ const HomeTab = () => {
             {/* Action Buttons */}
             <div className="space-y-3 px-4 mt-8 mb-8">
             <button
-  onClick={() => window.open("https://t.me/EonixAi_Channel", "_blank", "noopener,noreferrer")}
+  onClick={() => window.open("https://t.me/", "_blank", "noopener,noreferrer")}
   className="shine-effect w-full bg-[#ffffff0d] border-[1px] border-[#2d2d2e] rounded-lg px-4 py-2 flex items-center justify-between"
 >
   <div className="flex items-center gap-3 font-medium">
@@ -70,7 +70,7 @@ const HomeTab = () => {
 </button>
 
 <button
-  onClick={() => window.open("https://x.com/EonixAiComplex", "_blank", "noopener,noreferrer")}
+  onClick={() => window.open("https://x.com/ZephyrusLabsfun", "_blank", "noopener,noreferrer")}
   className="w-full bg-[#ffffff0d] border-[1px] border-[#2d2d2e] rounded-lg px-4 py-2 flex items-center justify-between"
 >
   <div className="flex items-center gap-3 font-medium">
