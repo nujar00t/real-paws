@@ -59,7 +59,7 @@ const HomeTab = () => {
             {/* Action Buttons */}
             <div className="space-y-3 px-4 mt-8 mb-8">
             <button
-  onClick={() => window.open("https://t.me/", "_blank", "noopener,noreferrer")}
+  onClick={() => window.open("https://t.me/zephyruslabs", "_blank", "noopener,noreferrer")}
   className="shine-effect w-full bg-[#ffffff0d] border-[1px] border-[#2d2d2e] rounded-lg px-4 py-2 flex items-center justify-between"
 >
   <div className="flex items-center gap-3 font-medium">
