@@ -35,28 +35,28 @@ const TasksTab = () => {
          
         {
             icon: taskBoost.src,
-            title: 'Boost EONIX channel',
-            reward: '+ 2,500 EONIX'
+            title: 'Boost ZEPHYR channel',
+            reward: '+ 2,500 ZEPHYR'
         },
         {
             icon: TaskTelegram,
             title: 'Follow channel',
-            reward: '+ 1,000 EONIX'
+            reward: '+ 1,000 ZEPHYR'
         },
         {
             icon: TaskTwitter,
             title: 'Follow twitter',
-            reward: '+ 2,000 EONIX'
+            reward: '+ 2,000 ZEPHYR'
         },
         {
             icon: TaskInvite,
             title: 'Invite 10 friends',
-            reward: '+ 5,000 EONIX'
+            reward: '+ 5,000 ZEPHYR'
         },
         {
             icon: TaskWallet,
             title: 'Connect wallet',
-            reward: '+ 3,000 EONIX'
+            reward: '+ 3,000 ZEPHYR'
         },
         // Add more tasks as needed
     ]
